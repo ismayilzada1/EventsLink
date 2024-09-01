@@ -1,0 +1,9 @@
+.event-types-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap:60px;
+}
+

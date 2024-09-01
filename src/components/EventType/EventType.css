@@ -1,0 +1,59 @@
+.event-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #111111;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.icon {
+    font-size: 60px;
+}
+
+.text {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .icon {
+        font-size: 50px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}

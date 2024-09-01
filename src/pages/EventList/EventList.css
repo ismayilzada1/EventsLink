@@ -1,0 +1,149 @@
+.event-list-container {
+    width: 100%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.event-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.carousel-title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.see-all-button {
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.event-carousel .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.event-carousel .slick-list {
+    overflow: hidden;
+}
+
+.event-carousel .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.slick-prev {
+    display: none !important;
+}
+
+.slick-next {
+    display: block;
+    background: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slick-next:before {
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+    .event-carousel .slick-slide {
+        width: 33.33% !important; /* Adjust for 3 slides */
+    }
+
+    .event-list-container {
+        padding: 60px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .event-list-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .carousel-title {
+        font-size: 20px;
+    }
+
+    .event-list-container {
+        padding: 40px;
+    }
+
+    .see-all-button {
+        margin-top: 10px;
+    }
+
+    .event-carousel .slick-slide {
+        width: 50% !important; /* Adjust for 2 slides */
+    }
+
+    .slick-next {
+        width: 30px;
+        height: 30px;
+        right: 5px;
+    }
+
+    .slick-next:before {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-list-header {
+        padding: 0 5px;
+    }
+
+    .carousel-title {
+        font-size: 18px;
+    }
+
+    .event-list-container {
+        padding: 30px;
+    }
+
+    .see-all-button {
+        padding: 8px 16px;
+    }
+
+    .event-carousel .slick-slide {
+        width: 100% !important; /* Adjust for 1 slide */
+    }
+
+    .slick-next {
+        width: 25px;
+        height: 25px;
+        right: 2px;
+    }
+
+    .slick-next:before {
+        font-size: 12px;
+    }
+}
